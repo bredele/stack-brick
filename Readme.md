@@ -22,7 +22,10 @@ HTML:
 JavaScript with [widget](https://github.com/bredele/widget) component:
 
 ```js
-widget.plugin('stack', new Stack(el)); //el is div.stack
+var stack = new Stack(el); //el is div.stack
+widget.plugin('stack', stack);
+...
+stack.get('blog');
 ```
 
 The stack plugin is ideal to create tab-based navigation and to perform heavy dom manipulation without triggering repaint/reflow mechanism.

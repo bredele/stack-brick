@@ -40,3 +40,13 @@ Stack.prototype.add = function(el, name, visible) {
 Stack.prototype.init = function(el) {
   this.stack.parent = el; //TODO: refactor domstack, setParent is not necessary
 };
+
+
+/**
+ * Show stack child.
+ * @param  {String} name
+ * @api public
+ */
+Stack.prototype.get = function(name) {
+  this.stack.get(name);
+};
