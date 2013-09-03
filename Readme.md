@@ -25,6 +25,8 @@ JavaScript with [widget](https://github.com/bredele/widget) component:
 widget.plugin('stack', new Stack(el)); //el is div.stack
 ```
 
+The stack plugin is ideal to create tab-based navigation and to perform heavy dom manipulation without triggering repaint/reflow mechanism.
+
 
 ## License
 
