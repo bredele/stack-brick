@@ -1,0 +1,16 @@
+{
+  "name": "stack-plugin",
+  "repo": "bredele/stack-plugin",
+  "description": "Stack fragment plugin",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "bredele/domstack": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
