@@ -13,9 +13,9 @@ HTML:
 
 ```html
 <div class="stack">
-  <div data-stack="home,true"></div>
-  <div data-stack="blog"></div>
-  <div data-stack="contacts"></div>    
+  <div data-stack="add:home,true"></div>
+  <div data-stack="add:blog"></div>
+  <div data-stack="add:contacts"></div>    
 </div>
 
 ```
