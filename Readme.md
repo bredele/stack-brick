@@ -1,11 +1,10 @@
-
 # stack-plugin
 
   Stack fragment [plugin](https://github.com/bredele/data-binding)
 
 ## Installation
 
-    $ component install bredele/stack-plugin
+    $ component install leafs/stack-plugin
 
 ## Usage
 
