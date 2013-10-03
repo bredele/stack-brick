@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "bredele/domstack": "*"
+    "leafs/domstack": "*"
   },
   "development": {},
   "license": "MIT",
