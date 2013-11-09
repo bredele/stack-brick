@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Stack</title>
+</head>
+<body>
+	<section class="stack">
+		<article stack="add:child1,true">
+			<button>child1</button>
+		</article>
+		<article stack="add:child2">
+			<input type="text" value="child2">
+		</article>
+		<article stack="add:child3">
+			Child 3
+		</article>
+	</section>
+	<script src="../build/build.js"></script>
+	<script>
+	var Binding = require('binding'),
+			Stack = require('stack-plugin');
+
+	var el = document.querySelector('.stack');
+	var stack = new Stack(el);
+	var binding = new Binding();
+	binding.attr('stack', stack);
+	binding.apply(el);
+
+	var i = 1;
+	setInterval(function(){
+		if(i === 4) i = 1;
+		stack.show('child' + i);
+		++i;
+	}, 500);
+	</script>
+</body>
+</html>

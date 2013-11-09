@@ -5,9 +5,11 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "bredele/domstack": "*"
+    "bredele/stack": "*"
   },
-  "development": {},
+  "development": {
+    "bredele/binding": "*"   
+  },
   "license": "MIT",
   "main": "index.js",
   "scripts": [

@@ -1,10 +1,11 @@
-var DomStack = require('domstack');
+var DomStack = require('stack');
 
 /**
  * Expose 'stack-plugin'
  */
 
 module.exports = Stack;
+
 
 /**
  * Stack constructor
@@ -16,6 +17,7 @@ function Stack(el){
   this.stack = new DomStack(el);
 }
 
+
 /**
  * Add dom into stack.
  * @param {HTMLElement} el      
@@ -25,10 +27,7 @@ function Stack(el){
  */
 
 Stack.prototype.add = function(el, name, visible) {
-  this.stack.add(name, el);
-  if(visible === 'true'){
-    this.stack.get(name);
-  }
+  this.stack.add(name, el, (visible === 'true'));
 };
 
 
@@ -37,8 +36,9 @@ Stack.prototype.add = function(el, name, visible) {
  * @param  {HTMLElement} el 
  * @api private
  */
+
 Stack.prototype.init = function(el) {
-  this.stack.parent = el; //TODO: refactor domstack, setParent is not necessary
+  this.stack.parent = el;
 };
 
 
@@ -47,6 +47,7 @@ Stack.prototype.init = function(el) {
  * @param  {String} name
  * @api public
  */
-Stack.prototype.get = function(name) {
-  this.stack.get(name);
+
+Stack.prototype.show = function(name) {
+  this.stack.show(name);
 };
