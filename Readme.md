@@ -22,7 +22,7 @@ JavaScript with [view](https://github.com/bredele/view) component:
 
 ```js
 var stack = new Stack(el); //el is div.stack
-widget.plugin('stack', stack);
+view.plugin('stack', stack);
 ...
 stack.show('blog');
 ```
