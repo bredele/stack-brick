@@ -1,34 +1,51 @@
-# stack-plugin
+# Stack
 
-  Stack fragment [plugin](https://github.com/bredele/binding)
+  Stack is ideal to create tab-based navigation and to perform heavy dom manipulation without triggering repaint/reflow mechanism.
 
 ## Installation
 
-    $ component install bredele/stack-plugin
+with [component](http://github.com/component/component):
+
+    $ component install bredele/stack-brick
+
+with [nodejs](http://nodejs.org):
+
+    $ npm install stack-brick
+
 
 ## Usage
 
-HTML:
+First, add the plugin to your view (see [lego](http://github.com/breele/lego) for more information):
+
+```js
+var Stack = require('stack-brick');
+var stack = new Stack(el);
+
+//lego view
+view.add('stack', stack);
+```
+
+## Basic
+
 
 ```html
 <div class="stack">
-  <div data-stack="add:home,true"></div>
-  <div data-stack="add:blog"></div>
-  <div data-stack="add:contacts"></div>    
+  <div class="home" stack="add:home,true"></div>
+  <div class="blog" stack="add:blog"></div>
+  <div class="contacts" stack="add:contacts"></div>    
 </div>
 
 ```
-JavaScript with [view](https://github.com/bredele/view) component:
+  Displays `home` by default. 
+
+
+Navigate through the stack:
 
 ```js
-var stack = new Stack(el); //el is div.stack
-view.plugin('stack', stack);
-...
-stack.show('blog');
+view.show('blog');
 ```
 
-The stack plugin is ideal to create tab-based navigation and to perform heavy dom manipulation without triggering repaint/reflow mechanism.
-
+see [domstack](http://github.com/bredele/domstack) for more details.
 
 ## License
 

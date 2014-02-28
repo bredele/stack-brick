@@ -1,4 +1,4 @@
-var DomStack = require('stack');
+var DomStack = require('domstack');
 
 /**
  * Expose 'stack-plugin'
