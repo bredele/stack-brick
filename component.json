@@ -1,14 +1,14 @@
 {
   "name": "stack-brick",
   "repo": "bredele/stack-brick",
-  "description": "lego plugin to stack dom nodes into a fragment",
+  "description": "Brick plugin to stack dom nodes into a fragment",
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
     "bredele/domstack": "*"
   },
   "development": {
-    "bredele/lego": "*"   
+    "bredele/brick": "*"   
   },
   "license": "MIT",
   "main": "index.js",

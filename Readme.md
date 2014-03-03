@@ -15,13 +15,13 @@ with [nodejs](http://nodejs.org):
 
 ## Usage
 
-First, add the plugin to your view (see [lego](http://github.com/breele/lego) for more information):
+First, add the plugin to your view (see [brick](http://github.com/breele/brick) for more information):
 
 ```js
 var Stack = require('stack-brick');
 var stack = new Stack(el);
 
-//lego view
+//brick view
 view.add('stack', stack);
 ```
 

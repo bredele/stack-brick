@@ -6,29 +6,25 @@
 </head>
 <body>
 	<section class="stack">
-		<article stack="add:child1,true">
+		<article stack="add:child1">
 			<button>child1</button>
 		</article>
-		<article stack="add:child2">
-			<input type="text" value="child2">
-		</article>
-		<article stack="add:child3">Child 3</article>
 	</section>
 	<script src="../build/build.js"></script>
 	<script>
-	  var lego = require('lego'),
+	  var brick = require('brick'),
 	  		Stack = require('stack-brick'),
 	  		el = document.querySelector('.stack');
 
 	  var stack = new Stack(el);
-	  lego(el).add('stack', stack).build();
+	  brick(el).add('stack', stack).build();
 
-	var i = 1;
-	setInterval(function(){
-		if(i === 4) i = 1;
-		stack.show('child' + i);
-		++i;
-	}, 500);
+	// var i = 1;
+	// setInterval(function(){
+	// 	if(i === 4) i = 1;
+	// 	stack.show('child' + i);
+	// 	++i;
+	// }, 500);
 	</script>
 </body>
 </html>
